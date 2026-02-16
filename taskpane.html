@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Word Hyperlink Updater</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+    <!-- Styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="ms-font-m ms-welcome">
+    <header class="ms-welcome__header ms-bgColor-neutralLighter">
+        <h1 class="ms-font-su">Link Updater</h1>
+    </header>
+    <main class="ms-welcome__main">
+        <section class="ms-welcome__header ms-u-fadeIn500">
+            <p class="ms-font-l">Scan and update broken hyperlinks with your SharePoint URL.</p>
+        </section>
+        
+        <div class="input-container">
+            <label for="sharepoint-url" class="ms-font-m">SharePoint Base URL:</label>
+            <input type="text" id="sharepoint-url" placeholder="https://your.sharepoint.com/sites/site-name/" class="ms-TextField-field" />
+            <p class="ms-font-xs" style="color: #666; margin-top: 5px;">This URL will replace the path for non-http links.</p>
+        </div>
+
+        <button id="run" class="ms-Button ms-Button--primary">
+            <span class="ms-Button-label">Update Hyperlinks</span>
+        </button>
+        
+        <div id="status-message" class="status-message ms-font-m"></div>
+    </main>
+    
+    <script type="text/javascript" src="taskpane.js"></script>
+</body>
+</html>

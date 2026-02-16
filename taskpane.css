@@ -1,0 +1,79 @@
+/* Basic Office UI Fabric inspired styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+.ms-welcome__header {
+    padding: 20px;
+    background-color: #f3f2f1;
+}
+
+.ms-welcome__main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ms-TextField-field {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 12px;
+    box-shadow: none;
+    border: 1px solid #8a8886;
+    border-radius: 2px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #323130;
+    height: 32px;
+    width: 100%;
+}
+
+.ms-Button {
+    box-sizing: border-box;
+    min-width: 80px;
+    height: 32px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    background-color: #f3f2f1;
+    color: #201f1e;
+}
+
+.ms-Button--primary {
+    background-color: #0078d4;
+    color: #ffffff;
+    border-color: #0078d4;
+}
+
+.ms-Button--primary:hover {
+    background-color: #106ebe;
+    border-color: #106ebe;
+}
+
+.status-message {
+    margin-top: 10px;
+    min-height: 20px;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
